@@ -1,0 +1,170 @@
+baseURL = "http://example.org/"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "??.??"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "LoveIt"
+
+[params]
+  # LoveIt theme version
+  version = "0.2.X"
+  defaultTheme = "dark"
+
+  [params.footer]
+    enable = false
+  
+  [params.page.share]
+    enable = true
+    Twitter = true
+    Facebook = true
+    Linkedin = true
+
+[params.social]
+  github = "Ketcap"
+  twitter = "uur_oruc"
+  telegram = "@ketcap"
+  devto = "uur_oruc"
+  linkedin = "uuroruc"
+
+[author]
+  name = "Ugur"
+  email = ""
+  link = ""
+
+[languages]
+  [languages.en]
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        # you can add extra information before the name (HTML format is supported), such as icons
+        pre = ""
+        # you can add extra information after the name (HTML format is supported), such as icons
+        post = ""
+        name = "Posts"
+        url = "/posts/"
+        # title will be shown when you hover on this menu link.
+        title = ""
+        weight = 1
+      [[languages.en.menu.main]]
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "Tags"
+        url = "/tags/"
+        title = ""
+        weight = 2
+      [[languages.en.menu.main]]
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "Categories"
+        url = "/categories/"
+        title = ""
+        weight = 3  
+    [languages.en.params.home]
+      rss = 10
+      # Home page profile
+      [languages.en.params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = ""
+      # URL of avatar shown in home page
+      avatarURL = "/images/avatar.png"
+      # title shown in home page (HTML format is supported)
+      title = ""
+      # subtitle shown in home page
+      subtitle = "I write JavaScript. That's all."
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # whether to show social links
+      social = true
+      # disclaimer (HTML format is supported)
+      disclaimer = ""
+      # Home page posts
+  [languages.tr]
+    [languages.tr.menu]
+      [[languages.tr.menu.main]]
+        identifier = "posts"
+        # you can add extra information before the name (HTML format is supported), such as icons
+        pre = ""
+        # you can add extra information after the name (HTML format is supported), such as icons
+        post = ""
+        name = "İçerikler"
+        url = "/posts/"
+        # title will be shown when you hover on this menu link.
+        title = ""
+        weight = 1
+      [[languages.tr.menu.main]]
+        identifier = "tags"
+        pre = ""
+        post = ""
+        name = "Etiketler"
+        url = "/tags/"
+        title = ""
+        weight = 2
+      [[languages.tr.menu.main]]
+        identifier = "categories"
+        pre = ""
+        post = ""
+        name = "Kategoriler"
+        url = "/categories/"
+        title = ""
+        weight = 3
+    [languages.tr.params.home]
+      rss = 10
+      # Home page profile
+      [languages.tr.params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = ""
+      # URL of avatar shown in home page
+      avatarURL = "/images/avatar.png"
+      # title shown in home page (HTML format is supported)
+      title = ""
+      # subtitle shown in home page
+      subtitle = "JavaScript yazıyorum. Hepsi bu."
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # whether to show social links
+      social = true
+      # disclaimer (HTML format is supported)
+      disclaimer = ""
+      # Home page posts
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
